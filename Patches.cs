@@ -1,11 +1,14 @@
-﻿using Harmony;
+﻿using System;
+using System.Reflection;
+using Harmony;
 using UnityEngine;
 
 namespace EnableFeatProgressInCustomMode {
-	internal class Patches {
+	internal static class Patches {
 
 		public static void OnLoad() {
-			Debug.Log("[EnableFeatProgressInCustomMode] Loaded!");
+			Version version = Assembly.GetExecutingAssembly().GetName().Version;
+			Debug.Log("[EnableFeatProgressInCustomMode] Version " + version + " loaded!");
 		}
 
 		[HarmonyPatch(typeof(Feat), "ShouldBlockIncrement")]
