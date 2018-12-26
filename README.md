@@ -1,11 +1,17 @@
 # EnableFeatProgressInCustomMode
 
-[Mod Loader](https://github.com/zeobviouslyfakeacc/ModLoaderInstaller/) mod for *The Long Dark*
+This mod for The Long Dark re-enables feat progress in custom mode games, which had been disabled in the v1.29 update.
 
-### Description
+Custom mode games can only get more challenging than Pilgrim – in which players can achieve feats – so it
+makes little sense that feat progress would be disabled in custom mode games.
 
-The v1.29 update turned off Feat progress in custom mode games.
+## Installation
 
-Considering that feats can even be achieved in Pilgrim, and seeing how custom mode games can only get more challenging than Pilgrim, this change makes absolutely no sense.
+1. If you haven't done so already, install the [Mod Loader](https://github.com/zeobviouslyfakeacc/ModLoaderInstaller)
+2. Install the mod automatically by using [WulfMarius's Mod-Installer](https://github.com/WulfMarius/Mod-Installer/releases)
 
-So I made a mod that turns Feat progress back on again.
+or
+
+1. If you haven't done so already, install the [Mod Loader](https://github.com/zeobviouslyfakeacc/ModLoaderInstaller)
+2. Download the latest version of `EnableFeatProgressInCustomMode.dll` from the [releases page](https://github.com/zeobviouslyfakeacc/EnableFeatProgressInCustomMode/releases)
+3. Move `EnableFeatProgressInCustomMode.dll` into the mods folder in your TLD install directory
