@@ -1,15 +1,15 @@
-﻿using System;
-using System.Reflection;
+﻿using MelonLoader;
 using Harmony;
 using UnityEngine;
 
 namespace EnableFeatProgressInCustomMode {
-	internal static class Patches {
-
-		public static void OnLoad() {
-			Version version = Assembly.GetExecutingAssembly().GetName().Version;
-			Debug.Log("[EnableFeatProgressInCustomMode] Version " + version + " loaded!");
+	internal class Mod : MelonMod {
+		public override void OnApplicationStart() {
+			Debug.Log($"[{InfoAttribute.Name}] version {InfoAttribute.Version} loaded!");
 		}
+	}
+
+	internal static class Patches {
 
 		[HarmonyPatch(typeof(Feat), "ShouldBlockIncrement")]
 		private static class NeverBlockIncrement {
